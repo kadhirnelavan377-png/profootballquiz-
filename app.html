@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Football Quiz</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- MENU -->
+<div id="menu" class="card">
+  <h1>Hello, <span id="user"></span></h1>
+  <button onclick="startQuiz('easy')">Easy</button>
+  <button onclick="startQuiz('medium')">Medium</button>
+  <button onclick="startQuiz('hard')">Hard</button>
+  <button onclick="startQuiz('extreme')">Extreme</button>
+  <button onclick="logout()">Logout</button>
+</div>
+
+<!-- QUIZ -->
+<div id="quiz" class="card"></div>
+
+<script src="quiz.js"></script>
+</body>
+</html>

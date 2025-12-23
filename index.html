@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Football Quiz Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="login" class="card">
+  <h1>⚽ Football Quiz</h1>
+  <p>Enter your username</p>
+  <input id="name" placeholder="Username">
+  <button onclick="login()">Start</button>
+</div>
+
+<script>
+function login(){
+  const name = document.getElementById("name").value.trim();
+  if(!name){ alert("Enter username"); return; }
+  localStorage.setItem("footballUser", name);
+  window.location.href = "app.html";
+}
+</script>
+</body>
+</html>

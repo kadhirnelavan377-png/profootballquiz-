@@ -1,0 +1,74 @@
+*{
+  box-sizing:border-box;
+  font-family:Segoe UI, sans-serif;
+}
+
+body{
+  background-color:#000; /* fallback */
+  background:
+    linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
+    url("stadium.jpg") /* your local stadium image */
+    center/cover no-repeat;
+}
+
+}
+
+.card{
+  width:90%;
+  max-width:420px;
+  background:rgba(15,23,42,.92);
+  padding:30px;
+  border-radius:18px;
+  text-align:center;
+  box-shadow:0 0 30px rgba(0,0,0,.7);
+}
+
+h1{
+  color:#38bdf8;
+  margin-bottom:10px;
+}
+
+input{
+  width:100%;
+  padding:14px;
+  border-radius:10px;
+  border:none;
+  margin:15px 0;
+  font-size:16px;
+  text-align:center;
+}
+
+button{
+  width:100%;
+  padding:14px;
+  margin-top:10px;
+  border:none;
+  border-radius:10px;
+  font-size:16px;
+  font-weight:bold;
+  cursor:pointer;
+  background:#38bdf8;
+  color:#000;
+}
+
+button:hover{
+  background:#7dd3fc;
+}
+
+#menu,#quiz{
+  display:none;
+}
+
+.option{
+  background:#020617;
+  border:2px solid #38bdf8;
+  border-radius:10px;
+  padding:12px;
+  margin:10px 0;
+  cursor:pointer;
+}
+
+.option:hover{
+  background:#38bdf8;
+  color:#000;
+}
